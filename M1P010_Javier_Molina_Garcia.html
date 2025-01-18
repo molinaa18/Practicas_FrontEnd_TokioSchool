@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10</title>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                Nombre: <input type="text" name="Nombre">
+                Apellidos: <input type="text" name="Apellidos">
+            </div>
+            <div>
+                Email: <input type="email" name="Email">
+                Teléfono: <input type="tel" name="Tel">
+            </div>
+            <div>
+                Dirección: <input type="text" name="Direccion">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Seleccionar curso</legend>
+            <input type="radio" name="Curso" value="Front-End"> Front-End
+            <input type="radio" name="Curso" value="Back-End"> Back-End
+            <input type="radio" name="Curso" value="Full-Stack"> Full-Stack
+        </fieldset>
+        <!--He utilizado radio en lugar de checkbox para que el usuario deba seleccionar uno y no múltiples-->
+        <button>Enviar formulario</button>
+    </form>
+
+</body>
+
+</html>
