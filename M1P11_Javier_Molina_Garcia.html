@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 11</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Registro de Usuario</legend>
+            <div>
+                <label>Nombre <input type="text" name="Nombre" required></label>
+            </div>
+            <br>
+            <div>
+                Género: <br>
+                <input type="radio" name="Genero" value="Masculino">Masculino
+                <input type="radio" name="Genero" value="Femenino">Femenino
+                <input type="radio" name="Genero" value="Otros">Otros
+            </div>
+            <br>
+            <div>
+                <label>Fecha de Nacimiento
+                    <input type="date" name="FechaNacimiento">
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Email <input type="email" name="Email" required>
+                </label>
+            </div>
+            <div>
+                <label> Contraseña <input type="password" name="Password" required>
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Nº de asignaturas matriculadas
+                    <input type="number" name="Asignaturas" min="1" max="15">
+                </label>
+            </div>
+            <div>
+                <label>Curso Matriculado
+                    <select name="Curso">
+                        <option value="FSSD">Full-Stack Software Development</option>
+                        <option value="DS">Data Science</option>
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="CS">Cybersecurity</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <div>
+                Acepto los <a href="https://upload.wikimedia.org/wikipedia/en/1/1c/FlandersDevil.png"
+                    target="_blank">Términos y Condiciones</a><input type="checkbox" name="TYC" required>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Enviar Formulario</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
