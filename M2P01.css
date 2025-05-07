@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.nombre-escuela {
+    font-size: 16pt;
+    color: #333FFF;
+    font-weight: bold;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+article {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
