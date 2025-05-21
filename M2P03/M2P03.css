@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+.main-header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 60px;
+    height: auto;
+    width: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    transition: text-shadow 0.2s ease-in-out;
+}
+
+.nav-list li a:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+main div {
+    margin: 20px 500px 20px 50px;
+}
+
+.consulta-aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 10 solid transparent;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.consulta-aside h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.consulta-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.consulta-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.consulta-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.consulta-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.consulta-form button:hover {
+    background-color: #0056b3;
+}
+
+.borde-sombra {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 10 solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0;
+    font-size: 3rem;
+}
+
+.redes-sociales a {
+  color: darkgray;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: black;
+}
