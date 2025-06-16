@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/b9766c0038.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="../html/inicio.html">
+            <picture>
+                <source srcset="../media/img/logo-horizontal.png" media="(min-width: 800px)" class="logo">
+                <img src="../media/img/logo-no-text.png" alt="Logo de la compañía" class="logo" />
+            </picture>
+        </a>
+        <nav class="standard-nav">
+            <ul>
+                <li><a href="../html/inicio.html">Inicio</a></li>
+                <li><a href="../html/about.html">Sobre nosotros</a></li>
+                <li><a href="../html/servicios.html">Servicios</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a onclick=showSidebar() href="#" class="menu-button"><svg xmlns="http://www.w3.org/2000/svg" height="48px"
+                viewBox="0 -960 960 960" width="48px" fill="#000000">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a>
+        <nav class="sidebar-nav">
+            <a onclick="hideSidebar()" href="#" class="close-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                    fill="#000000">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </a>
+            <ul>
+                <li><a href="../html/inicio.html">Inicio</a></li>
+                <li><a href="../html/about.html">Sobre nosotros</a></li>
+                <li><a href="../html/servicios.html">Servicios</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+    </div>
+    <footer>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
